@@ -1,0 +1,14 @@
+.dados-cliente{
+    margin: 3% 14%;
+}
+.dados-cliente h1 {
+    font-size: 22px;
+    color: #666666;
+}
+.form-dados{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}

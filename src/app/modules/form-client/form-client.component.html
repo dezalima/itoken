@@ -1,0 +1,11 @@
+<section class="dados-cliente">
+    <h1>Dados do cliente</h1>
+    <form action="" class="form-dados">
+        <app-input2 class="w-55" label="CPF" [control]="form.get('cpf')"></app-input2>
+        <app-input2 class="w-15"label="Agência" [control]="form.get('agencia')"></app-input2>
+        <app-input2 class="w-15" label="Conta" [control]="form.get('conta')"></app-input2>
+        <app-input2 class="w-10" label="Dígito" [control]="form.get('digito')"></app-input2>
+
+        <app-button  info="consultar"></app-button>
+    </form>
+</section>

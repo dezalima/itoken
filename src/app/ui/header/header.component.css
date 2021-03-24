@@ -1,0 +1,20 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    text-align: right;
+    display: block;
+    border-right: 2px solid #d8d2cf;;
+    padding: 10px 20px;
+}
+
+.header-infos {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}

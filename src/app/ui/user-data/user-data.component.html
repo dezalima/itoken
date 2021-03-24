@@ -1,0 +1,7 @@
+<ul class="user-list" *ngIf="customer$ | async as customer">
+    <li><img src="/assets/arrow.svg" alt=""></li>
+    <li *ngIf="customer.cpf">CPF: <span>{{customer.cpf}}</span></li>
+    <li *ngIf="customer.agencia">Agência: <span>{{customer.agencia}}</span></li>
+    <li *ngIf="customer.conta">Conta: <span>{{customer.conta}}</span></li>
+    <li *ngIf="customer.digito">Dígito: <span>{{customer.digito}}</span></li>
+</ul>

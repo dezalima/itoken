@@ -1,0 +1,41 @@
+
+<section class="buscar-habilitacao fundo-hab">
+  <div class="habilitacao-info">
+    <app-title-section title="Habilitação iToken no App Exterior"></app-title-section>
+    <div class="habilitacao-cards">
+      <app-card-habilitacao info="Número do cartão da conta corrente do 5º ao 8º corresponde ao informado? ">
+      </app-card-habilitacao>
+      <app-card-habilitacao info="O Status do iToken está associado?">
+      </app-card-habilitacao>
+      <app-card-habilitacao info="Os IP’s identificados correspondem a localidade do cliente?">
+      </app-card-habilitacao>
+      <app-card-habilitacao
+        info="Houve movimentação com o cartão de débito no Brasil no  período  em que o cliente informou estar no exterior?">
+      </app-card-habilitacao>
+    </div>
+  </div>
+</section>
+<div class="habilita-token">
+  <div class="line"></div>
+  <button class="btn-habilitar">Habilitar token</button>
+</div>
+<section class="buscar-status">
+  <app-title-section title="Status Dispositivos"></app-title-section>
+  <div class="buscar-status-cards">
+    <app-status-cards title="iToken no Computador"></app-status-cards>
+    <div class="buscar-status-cards-sincronismo fundo-hab">
+      <app-status-cards title="iToken App no celular"></app-status-cards>
+      <app-status-cards title="iToken no Chaveiro"></app-status-cards>
+      <button class="btn-sincronismo">Sincronismo</button>
+    </div>
+    <app-status-cards title="Número de série:"></app-status-cards>
+    <app-status-cards title="Tipo de iToken:"></app-status-cards>
+  </div>
+</section>
+<section class="busca-table">
+  <app-title-section title="Informações Dispositivos"></app-title-section>
+  <div class="busca-table-body">
+    <app-table></app-table>
+    <app-pagination></app-pagination>
+  </div>
+</section>

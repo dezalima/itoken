@@ -1,0 +1,22 @@
+.btn-dropdown{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 20px;
+    width: 180px;
+    cursor: pointer;
+}
+
+.btn-dropdown, button:focus{
+    outline-style: none;
+}
+.bt-name{
+    font-weight: bold !important;
+    font-size: 16px;
+}
+.btn-svg{
+    transform: rotate(-90deg);
+    margin-top: -8px;
+}

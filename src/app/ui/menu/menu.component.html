@@ -1,0 +1,14 @@
+<button class="btn-dropdown" [matMenuTriggerFor]="menu">
+  <img src={{img}} alt="">
+  <p class="btn-name">{{nome}}</p>
+  <div class="btn-svg">
+    <img  src="/assets/arrow.svg" alt="">
+  </div>
+  
+</button>
+<mat-menu #menu="matMenu">
+  <div *ngFor="let item of list">
+    <button mat-menu-item>{{item.label}}</button>
+  </div>
+
+</mat-menu>

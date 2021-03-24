@@ -1,0 +1,34 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">tipo</th>
+            <th scope="col">agência</th>
+            <th scope="col">conta</th>
+            <th scope="col">DAC</th>
+            <th scope="col">CPF</th>
+            <th scope="col">número de série</th>
+            <th scope="col">status</th>
+            <th scope="col">data status</th>
+            <th scope="col">hora status</th>
+            <th scope="col">id mobile</th>
+            <th scope="col">Aplicativo</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let info of data">
+            <td>{{info.tipo}}</td>
+            <td>{{info.agencia}}</td>
+            <td>{{info.conta}}</td>
+            <td>{{info.dac}}</td>
+            <td>{{info.cpf}}</td>
+            <td>{{info.nSerie}}</td>
+            <td>{{info.status}}</td>
+            <td>{{info.dataStatus}}</td>
+            <td>{{info.horaStatus}}</td>
+            <td>{{info.idMobile}}</td>
+            <td>{{info.aplicativo}}</td>
+
+        </tr>
+    </tbody>
+</table>

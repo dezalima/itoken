@@ -1,0 +1,36 @@
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 30px 0;
+}
+.btn, .btn-primeiro, .btn-ultimo{
+    border: 1px solid #EFE9E5;
+    background-color: #fff;
+    width: 42px;
+    height: 42px;
+    font-size: 14px;
+    color: #252220;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+.btn-primeiro{
+    width: 122px;
+    border-radius: 4px 0 0 4px;
+}
+.btn-ultimo{
+    width: 122px;
+    border-radius: 0 4px 4px 0;
+}
+.btn-disable{
+    color: #d0cecc;
+}
+.btn-selected{
+    color: #fff;
+    background-color: #EC7000;
+}
