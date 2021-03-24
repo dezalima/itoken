@@ -4,7 +4,6 @@
         <app-input class="w-100" tipo="text" campo="funcional" [control]="form.get('funcional')" ></app-input>
         <app-input class="w-100" tipo="text" campo="racf" [control]="form.get('racf')" ></app-input>
         <app-input class="w-100" tipo="password" campo="senha" [control]="form.get('password')" ></app-input>
-        <app-button class="mt-4" info="entrar" [disabled]="!form.valid"   ></app-button>
-      <!-- (click)="onConsultar()"   -->
+        <app-button class="mt-4" info="entrar" (click)="onConsultar()" [disabled]="!form.valid"></app-button>
     </form>
 </section>

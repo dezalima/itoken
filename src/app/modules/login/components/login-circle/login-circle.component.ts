@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from "@angular/forms";
+import { Router } from '@angular/router';
+import{ Login } from '../../../../shared/models/login'
+import { LoginService } from '../../../../shared/service/login.service'
 
 @Component({
   selector: 'app-login-circle',
@@ -14,10 +17,18 @@ export class LoginCircleComponent implements OnInit {
     senha: new FormControl('', Validators.required)
   })
 
-  constructor() { 
+  constructor(
+    private loginService: LoginService,
+    private router: Router
+  ) { 
     
   }
   
   ngOnInit(): void {
+  }
+
+  onConsultar(): void {
+    this.loginService.setLogin(this.form.value);
+    this.router.navigateByUrl('/frame');
   }
 }

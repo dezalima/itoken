@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup,Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import{ Customer } from '../../shared/models/customer'
+import { CustumerService } from '../../shared/service/customer.service'
+
+
 
 @Component({
   selector: 'app-form-client',
@@ -15,9 +20,16 @@ export class FormClientComponent implements OnInit {
     digito: new FormControl('', Validators.required)
   })
 
-  constructor() { }
+  constructor(
+    private customerService: CustumerService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+  onConsultar(): void {
+    this.customerService.setCustomer(this.form.value);
+    this.router.navigateByUrl('/buscar-cpf');
   }
 
 }

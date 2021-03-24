@@ -5,7 +5,6 @@
         <app-input2 class="w-15"label="Agência" [control]="form.get('agencia')"></app-input2>
         <app-input2 class="w-15" label="Conta" [control]="form.get('conta')"></app-input2>
         <app-input2 class="w-10" label="Dígito" [control]="form.get('digito')"></app-input2>
-
-        <app-button  info="consultar"></app-button>
+        <app-button  info="consultar" (click)="onConsultar()" [disabled]="!form.valid"></app-button>
     </form>
 </section>

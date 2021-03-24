@@ -15,7 +15,7 @@ export class CustumerService {
   asCustomer(): Observable<Customer>{
     return this.customers$.asObservable();
   }
-  setCostumer(customer: Customer): void{
+  setCustomer(customer: Customer): void{
     this.customers$.next(customer);
   }
   
